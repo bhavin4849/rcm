@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-30T04:13:25 GMT-04:00" name="Default suite" finished-at="2025-03-30T04:14:51 GMT-04:00" duration-ms="86277">
+    <groups>
+    </groups>
+    <test started-at="2025-03-30T04:13:25 GMT-04:00" name="Default test" finished-at="2025-03-30T04:14:51 GMT-04:00" duration-ms="86277">
+      <class name="rcm.HardVerify">
+        <test-method is-config="true" signature="setup()[pri:0, instance:rcm.HardVerify@1e04fa0a]" started-at="2025-03-30T04:13:25 GMT-04:00" name="setup" finished-at="2025-03-30T04:14:19 GMT-04:00" duration-ms="54750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="HardVerification()[pri:0, instance:rcm.HardVerify@1e04fa0a]" started-at="2025-03-30T04:14:19 GMT-04:00" name="HardVerification" finished-at="2025-03-30T04:14:51 GMT-04:00" duration-ms="31490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HardVerification -->
+      </class> <!-- rcm.HardVerify -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
