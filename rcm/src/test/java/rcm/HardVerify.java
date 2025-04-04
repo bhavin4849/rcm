@@ -1,5 +1,9 @@
 package rcm;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import Module.HardVerifyModule;
 public class HardVerify extends TestCaseBase{
@@ -49,6 +53,23 @@ public class HardVerify extends TestCaseBase{
 			System.out.println("TestCase is Failed: Cancel Verification text is not appears.");
 		}
 
+	}
+	@Test
+	public void hyperlinks() throws InterruptedException
+	{
+	
+		HardVerifyModule hv = new HardVerifyModule(driver);
+		hv.login(driver);
+		hv.clickcallpopbtn(driver);
+		Thread.sleep(5000);
+		
+		List <WebElement> links = driver.findElements(By.xpath("//div[contains(@class,'dashbordapplist ng-tns-c3066347105-1')]"));
+		System.out.println("Total Links: "+links.size());
+		
+		for(WebElement ele : links)
+		{
+			System.out.println(ele.getText());
+		}
 	}
 	
 }
